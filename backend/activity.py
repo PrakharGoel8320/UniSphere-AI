@@ -8,7 +8,7 @@ def log_activity(user, action):
     c = conn.cursor()
 
     c.execute(
-        "INSERT INTO activity_logs(user, action) VALUES (?,?)",
+        "INSERT INTO activity_logs (user, action) VALUES (?,?)",
         (str(user), action)
     )
 
