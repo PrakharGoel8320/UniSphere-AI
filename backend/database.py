@@ -11,7 +11,7 @@ def init_db():
     conn = sqlite3.connect(DB_NAME)
     c = conn.cursor()
 
-    # ---------------- USERS ----------------
+    # ---------------- USERS  ----------------
     c.execute("""
     CREATE TABLE IF NOT EXISTS users(
         reg_id TEXT PRIMARY KEY,
@@ -22,7 +22,7 @@ def init_db():
     )
     """)
 
-    # ---------------- ADMINS ----------------
+    # ---------------- ADMINS  ----------------
     c.execute("""
     CREATE TABLE IF NOT EXISTS admins(
         admin_id TEXT PRIMARY KEY,
@@ -30,7 +30,7 @@ def init_db():
     )
     """)
 
-    # ---------------- ACTIVITY LOGS ----------------
+    # ---------------- ACTIVITY  LOGS ----------------
     c.execute("""
     CREATE TABLE IF NOT EXISTS activity_logs(
         id INTEGER PRIMARY KEY AUTOINCREMENT,
