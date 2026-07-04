@@ -1,11 +1,11 @@
-# backend/admin_api.py
+# backend/admin_api.py 
 
 from backend.database import universities, students, documents
 
 
-# ======================
-# ADMIN LOGIN
-# ======================
+# ====================== 
+# ADMIN LOGIN 
+# ====================== 
 
 def admin_login(admin_id):
 
